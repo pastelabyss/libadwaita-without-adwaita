@@ -4,7 +4,7 @@ PKGVER=1.6.0
 
 prepare() {
     sudo dnf remove libadwaita
-    sudo dnf install git meson gi-docgen sassc gobject-introspection vala patch cmake meson libsass gcc glib2-devel pkgconfig
+    sudo dnf install git meson gi-docgen sassc gobject-introspection vala patch cmake meson libsass gcc glib2-devel pkgconf
     git clone https://gitlab.gnome.org/GNOME/libadwaita.git
 }
 build() {
