@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PKGVER=1.6.0
 
 prepare() {
