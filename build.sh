@@ -21,9 +21,12 @@ install_libadwaita() {
 
 main() {
     # Prepare for build
-    prepare()
+    prepare
     # Build
-    build()
+    build
     # Install with ninja
-    install_libadwaita()
+    install_libadwaita
 }
+
+# Invoke main()
+main
