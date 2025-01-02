@@ -15,15 +15,15 @@ build() {
     ninja -C build
 }
 
-ninja_install() {
+install_libadwaita() {
     sudo ninja -C build install
 }
 
 main() {
     # Prepare for build
-    prepare
+    prepare()
     # Build
-    build
+    build()
     # Install with ninja
-    ninja_install
+    install_libadwaita()
 }
