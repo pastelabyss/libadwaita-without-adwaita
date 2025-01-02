@@ -15,6 +15,15 @@ build() {
     ninja -C build
 }
 
-package() {
+ninja_install() {
     sudo ninja -C build install
+}
+
+main() {
+    # Prepare for build
+    prepare
+    # Build
+    build
+    # Install with ninja
+    ninja_install
 }
